@@ -2,3 +2,71 @@ html {
   height: 100%;
   width: 100%;
 }
+body{
+  display: flex;
+  margin: 0;
+  font-family: sans-serif;
+  background: gray;
+  color: orange;
+}
+.sidebar{
+  width: 250px;
+  background: black;
+  height: 100vh;
+  padding: 20 px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.sidebar h2{
+  margin-bottom: 2rem;
+  margin-left: 20px;
+}
+
+.sidebar nav ul{
+  list-style: none;
+  padding: 0;
+  margin-left: 20px;
+}
+.sidebar nav ul li{
+  margin: 1rem 0;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.sidebar nav ul li a{
+  text-decoration: none;
+  color: orange;
+  transition: color 0.3s ease;
+}
+.sidebar #log-out{
+  margin-top: auto;
+  background-color: orange;
+  color: black;
+  padding: 12px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 14px; 
+  margin-bottom: 40px;
+  margin-left: 65px;
+} 
+.sidebar #add-expense{
+  background-color: orange;
+  color: black;
+  padding: 12px;
+  width: 100px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  gap: 14px;
+  margin-top: 95%;
+  margin-left: 65px;
+}
+.sidebar button:active {
+  background-color:#633f13;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
