@@ -21,7 +21,25 @@
   <button id="add-expense">Add expense</button>
   <button id="log-out">Log out</button>
 </div>
-</body>
-  
 
+  <!-- total spent, the chart, the list of items money spent on-->
+  <div class="main">
+    <div class="spending-summary">
+      <h3>Total spending:</h3>
+      <div id="total-spending">0</div>
+    </div>
+  </div>
+  
+  <canvas id="expense-chart" id="chart-placeholder"></canvas>
+
+  <div class="filters">
+    <input type="date" id="filter-date"/>
+    <button id="apply-filters">Apply Filters</button>
+    
+    <ul id="transaction-list"></ul>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+    </body>
 </html>
