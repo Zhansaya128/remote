@@ -56,7 +56,7 @@ body{
   background-color: orange;
   color: black;
   padding: 12px;
-  width: 100px;
+  width: 120px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -65,8 +65,13 @@ body{
   margin-top: 95%;
   margin-left: 65px;
 }
-.sidebar bitton:active {
-  background-color:#633f13;
+.sidebar #add-expense:active {
+  background:#835454;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.sidebar #log-out:active {
+  background:#835454;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
@@ -74,6 +79,7 @@ body{
   padding: 20px;
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 .spending-summary {
   background: #393e46;
@@ -103,9 +109,9 @@ body{
 .filters {
   margin-bottom: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 10px;
-  justify-content: center;
+  justify-content: top;
 }
 .filters input, .filters button {
   padding: 10px;
@@ -120,6 +126,11 @@ body{
   font-weight: bold;
   background-color: orange;
 }
+.filters button:active {
+  background:#835454;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 #transaction-list {
   list-style: none;
   padding: 0;
@@ -130,6 +141,7 @@ body{
   padding: 15px;
   border-radius: 10px;
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
 }

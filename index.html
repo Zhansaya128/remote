@@ -8,8 +8,8 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body> <!-- sidebar contents:-->
-<div class="sidebar">
+<body>
+<div class="sidebar">  <!-- sidebar contents:-->
   <h2>Expense Tracker</h2>
   <nav>
     <ul>
@@ -18,26 +18,28 @@
       <li> <a href="#">Daily</a></li>
     </ul>
   </nav>
-  <button id="add-expense">Add expense</button>
-  <button id="log-out">Log out</button>
+  <button id="add-expense">Add income/expense</button>
+  <button onclick="window.location.href='signup.html'" id="log-out"> Log out</button>
 </div>
 
   <!-- total spent, the chart, the list of items money spent on-->
   <div class="main">
     <div class="spending-summary">
-      <h3>Total spending:</h3>
+      <h3>You are currently this much rich: </h3>
       <div id="total-spending">0</div>
     </div>
+    <h4 style="color: brown;">Your expenses:</h4>
     <canvas id="expense-chart" id="chart-placeholder"></canvas>
   </div>
   
   <div class="filters">
     <input type="date" id="filter-date"/>
-     <input type="text" id="filter-category" placehold="Filter by category" />
+     <input type="text" id="filter-category" placeholder="Category" />
     <button id="apply-filters">Apply filters</button>
-    
-    <ul id="transaction-list"></ul>
+    <button id="clear-filters">Clear filters</button>
   </div>
+
+  <div id=> <ul id="transaction-list"></ul></div>
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
