@@ -80,7 +80,7 @@ function renderTransactions(items) {
     left.innerHTML = `<strong>${tx.date}</strong> - ${tx.category} (${tx.type})<br/>${tx.description}`;
     
     const right = document.createElement('div');
-    right.innerHTML = `₹${tx.amount}`;
+    right.innerHTML = `₸${tx.amount}`;
 
     //delete button 
     const delBtn = document.createElement('button');
